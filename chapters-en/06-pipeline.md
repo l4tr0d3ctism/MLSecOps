@@ -1,7 +1,5 @@
 # Chapter 6: Ten-Stage MLSecOps Pipeline
 
-<div dir="ltr">
-
 ## Pipeline objective
 
 The `MLSecOps` pipeline continuously and automatically embeds security into the model build, evaluation, signing, deployment, and monitoring cycle. The goal is that no model, data, or `Artifact` enters the operational environment without passing security controls and producing auditable evidence.
@@ -218,5 +216,3 @@ No model should reach `Production` without digital signature, `SBOM/AI-BOM`, suc
 2. Full scan of model files before training process is mandatory.
 3. `CT` cycle must repeat all stages and security gates of the main pipeline without shortcuts.
 4. Retrained models must enter the real environment through canary path.
-
-</div>

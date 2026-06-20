@@ -1,7 +1,5 @@
 # Chapter 4: Data Security and Privacy
 
-<div dir="ltr">
-
 ## Importance of data security
 
 Model behavior largely comes from the data it was trained on or uses at runtime. If data is poisoned, incomplete, sensitive, of unknown origin, or outside data contract scope, the model can also produce unsafe, biased, or non-auditable output.
@@ -123,5 +121,3 @@ In `RAG` systems, data matters not only at training time; documents retrieved at
 ## Practical principle
 
 Every piece of data entering the AI lifecycle must have defined origin, owner, version, sensitivity level, and usage authorization. Without this information, model output will not be defensible or auditable.
-
-</div>

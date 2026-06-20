@@ -1,7 +1,5 @@
 # Chapter 5: Model, Artifact, and Supply Chain Security
 
-<div dir="ltr">
-
 ## Model as a security asset
 
 A model is not merely an output file from the training process. A model is a sensitive asset that can contain decision logic, training data, organizational knowledge, and intellectual property value. Therefore it must be managed as a security `Artifact`.
@@ -181,5 +179,3 @@ Recommended controls:
 ## Practical principle
 
 No anonymous, unsigned, origin-unknown model without security testing should enter `Production`. A model must be as controllable as a sensitive container image or software package.
-
-</div>

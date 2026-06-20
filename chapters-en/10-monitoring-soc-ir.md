@@ -1,7 +1,5 @@
 # Chapter 10: Monitoring, SOC, and Incident Response
 
-<div dir="ltr">
-
 ## Monitoring in AI systems
 
 AI monitoring is not just checking uptime or latency. Model behavior, data, prompts, tools, outputs, drift, and security incidents must also be observed.
@@ -215,5 +213,3 @@ If AI behavior is not seen at `Runtime`, its security cannot be managed. Monitor
 - false positive management is a permanent part of SOC operations.
 - `Day-2 Operations` matters as much as deploy.
 - success of AI incident response largely depends on quality of the initial snapshot.
-
-</div>

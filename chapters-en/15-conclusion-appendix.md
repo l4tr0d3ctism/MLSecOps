@@ -1,7 +1,5 @@
 # Chapter 15: Conclusion and Appendices
 
-<div dir="ltr">
-
 ## Conclusion
 
 `MLSecOps` is a response to the reality that AI systems are not merely classic software. They work with data, models, `Artifact`s, prompts, `RAG`, memory, tools, agents, and probabilistic behavior. Therefore, their security must be distributed across the entire lifecycle.
@@ -287,5 +285,3 @@ AI security is not solved by a single tool, a secure prompt, or a simple test. S
 By separating `Risk Management` from `Threat Modeling`, the 10-stage pipeline, measurable assurance, runtime controls, and the `Evidence Pack`, organizations can deploy models in production with security and auditable defensibility.
 
 `MLSecOps` is a prerequisite for the trustworthiness of AI systems in real environments. An organization that takes `MLSecOps` seriously not only reduces risk but also increases the speed of secure deployment; and this is the difference between "using AI" and "trusting AI."
-
-</div>

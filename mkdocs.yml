@@ -5,7 +5,7 @@ site_url: https://l4tr0d3ctism.github.io/MLSecOps/
 
 repo_name: l4tr0d3ctism/MLSecOps
 repo_url: https://github.com/l4tr0d3ctism/MLSecOps
-edit_uri: edit/main/
+edit_uri: edit/main/chapters-en/
 
 copyright: Copyright &copy; 2025 MLSecOps Guide Contributors — CC BY-SA 4.0
 
@@ -60,6 +60,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Guide:
+      - Table of Contents: chapters-en/TABLE-OF-CONTENTS.md
       - Introduction: chapters-en/01-intro.md
       - Scope & Threat Model: chapters-en/02-scope-risk-threat-model.md
       - Autonomous AI Threats: chapters-en/03-threat-landscape.md

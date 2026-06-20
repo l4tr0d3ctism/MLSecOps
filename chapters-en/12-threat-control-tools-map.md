@@ -1,7 +1,5 @@
 # Chapter 12: Threat, Control, and Tool Mapping
 
-<div dir="ltr">
-
 ## Purpose of Mapping
 
 Threat, control, and tool mapping helps teams understand which control is required for each risk and which tools can implement or support that control. Tools do not replace secure architecture, but they make control execution repeatable and auditable.
@@ -479,5 +477,3 @@ Security validation must evaluate not only whether a model is accurate or safe, 
 ## Practical Principle
 
 Tools should make security controls actionable, not replace security thinking. First identify the threat and control, then select the tool.
-
-</div>

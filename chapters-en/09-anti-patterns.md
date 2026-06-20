@@ -1,7 +1,5 @@
 # Chapter 9: Anti-patterns in MLSecOps
 
-<div dir="ltr">
-
 ## Why anti-patterns matter
 
 Many security failures in AI systems do not stem from lack of advanced tools; they arise from wrong architectural decisions, excessive trust in the model, removal of simple controls, and lack of auditable evidence. This chapter summarizes the most common wrong patterns.
@@ -73,5 +71,3 @@ Correct pattern:
 ## Practical principle
 
 Wherever the system operates on implicit trust, a likely `Anti-pattern` exists. In `MLSecOps`, trust must be replaced with control, evidence, and limits.
-
-</div>

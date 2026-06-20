@@ -1,7 +1,5 @@
 # Chapter 2: Scope, Audience, and Threat Model
 
-<div dir="ltr">
-
 ## Scope of the article
 
 This article is written for organizations that develop, deploy, or maintain `ML` or `AI` systems in operational environments. These systems may range from classic tabular and computer vision models to `LLM`s, `RAG` architectures, multi-tenant services, and intelligent agents.
@@ -79,5 +77,3 @@ The output of threat modeling must be an actionable document, not merely a descr
 - Which controls are mandatory.
 - Which criteria cause model release to be blocked.
 - What evidence must be stored for audit.
-
-</div>

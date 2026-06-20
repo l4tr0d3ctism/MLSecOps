@@ -1,7 +1,5 @@
 # Chapter 8: Agentic AI Security
 
-<div dir="ltr">
-
 ## Why Agentic AI poses a different risk
 
 A typical language model usually generates text. But an intelligent agent can invoke tools, read files, create tickets, send email, search data, or perform real operations. For this reason, agent risk is not just response quality; it is action risk.
@@ -221,5 +219,3 @@ If only three controls can be implemented for agents, these three have the great
 ## Practical principle
 
 An intelligent agent must not run with full trust. Every tool, every memory, every output, and every delegation to another agent must be treated as untrusted input.
-
-</div>

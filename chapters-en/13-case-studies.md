@@ -1,7 +1,5 @@
 # Chapter 13: Case Studies and Lessons Learned
 
-<div dir="ltr">
-
 ## Chapter objective
 
 Case studies show that `MLSecOps` risks are not theoretical. Many incidents arise from the combination of data, model, supply chain, access, and runtime.
@@ -162,5 +160,3 @@ Lessons learned:
 ## Practical principle
 
 In most incidents, failure is not from the model alone. Failure arises from excessive trust in data, tools, supply chain, context, or the user.
-
-</div>

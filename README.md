@@ -205,6 +205,8 @@ For questions, feedback, or collaboration opportunities, please open an issue or
 
 ## Build documentation locally
 
+For maintainers only — copies chapters into `docs/` and serves the site:
+
 ```bash
 pip install -r requirements.txt
 powershell -File scripts/prepare-docs.ps1   # Windows
@@ -212,6 +214,8 @@ powershell -File scripts/prepare-docs.ps1   # Windows
 mkdocs serve
 ```
 
-Open http://127.0.0.1:8000 — the site deploys automatically to GitHub Pages on push to `main` via `.github/workflows/deploy-docs.yml`.
+Open http://127.0.0.1:8000. The site deploys to GitHub Pages on push to `main` via `.github/workflows/deploy-docs.yml`.
+
+**Enable Pages once:** Repository → Settings → Pages → Build and deployment → Source: **GitHub Actions**.
 
 Published URL: https://l4tr0d3ctism.github.io/MLSecOps/

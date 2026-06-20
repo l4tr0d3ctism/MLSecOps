@@ -1,7 +1,5 @@
 # Chapter 3: Autonomous AI Threats and Offensive AI Operations
 
-<div dir="ltr">
-
 > **Scope note:** Sections marked *emerging* describe research-stage or plausible future capabilities (e.g., autonomous malware at scale, AI worms such as Morris II). Sections marked *demonstrated / active patterns* reflect threats with published incidents or active exploitation patterns (e.g., tool abuse, memory poisoning, compute hijacking). Threat models should prioritize demonstrated risks first.
 
 ## Overview
@@ -441,5 +439,3 @@ Particular mappings include (technique-level examples, not full coverage):
 ## Chapter Summary
 
 Autonomous AI systems introduce a fundamental shift in cyber threats. The attacker is no longer limited to predefined scripts or static malware. Instead, AI-driven systems can observe, reason, decide, act, and adapt in real time. These capabilities enable autonomous reconnaissance, exploit generation, lateral movement, persistence, resource hijacking, and adaptive evasion. Consequently, MLSecOps programs must evaluate not only vulnerabilities and indicators of compromise but also agent behavior, tool interactions, decision patterns, memory integrity, and runtime autonomy across the entire AI lifecycle.
-
-</div>

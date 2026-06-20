@@ -1,7 +1,5 @@
 # Chapter 14: MLSecOps Maturity Roadmap
 
-<div dir="ltr">
-
 ## Why Phased Maturity Matters
 
 Implementing full `MLSecOps` in a single phase is usually impractical. Teams must progress based on their risk, capacity, and architecture. The maturity roadmap helps an organization start with foundational controls and gradually reach an auditable, operational architecture.
@@ -94,5 +92,3 @@ For a practical start, these controls deliver the most value:
 ## Practical Principle
 
 `MLSecOps` maturity does not start with buying tools. It starts with understanding assets, defining threats, implementing foundational controls, and producing reliable evidence.
-
-</div>

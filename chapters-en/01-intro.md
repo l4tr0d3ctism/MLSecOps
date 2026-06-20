@@ -1,7 +1,5 @@
 # Chapter 1: Abstract and Introduction
 
-<div dir="ltr">
-
 ## Abstract
 
 `MLSecOps` is a practical security framework for securing AI-based systems throughout their entire lifecycle—from data collection and model training to deployment, execution, monitoring, and incident response. This approach transforms security from a one-time pre-release check into an engineered, measurable, repeatable, and auditable process.
@@ -134,5 +132,3 @@ This guide focuses specifically on `MLSecOps`: securing the full lifecycle of `M
 In simple terms: `MLSecOps` means "securing AI," while `AISecOps` means "using AI for security." This guide is entirely within the `MLSecOps` domain and does not enter the realm of `AISecOps`; although in Chapter 10, which addresses integration with the `SOC`, the practical point of contact between these two domains is shown.
 
 In short, `MLSecOps` applies the same logic as `DevSecOps`, but for securing data, models, the `Pipeline`, `Runtime`, and the behavior of AI systems—not just code and infrastructure.
-
-</div>

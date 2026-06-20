@@ -1,7 +1,5 @@
 # Chapter 11: Governance, Compliance, and Evidence Pack
 
-<div dir="ltr">
-
 ## Governance in MLSecOps
 
 Governance means that decisions related to the model, data, risk, and release are explainable, traceable, and auditable. In AI systems, the absence of governance prevents teams from explaining how a model was built, why it was released, and what should be investigated in a security incident.
@@ -242,5 +240,3 @@ Recommendation: Define a `security.txt` or CVD process for the organization's AI
 ## Practical principle
 
 If a model is not auditable, it is not trustworthy from an organizational perspective. Evidence must be produced concurrently with building and releasing the model—not after an incident and not manually.
-
-</div>

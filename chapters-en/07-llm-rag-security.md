@@ -1,7 +1,5 @@
 # Chapter 7: LLM and RAG Security
 
-<div dir="ltr">
-
 ## How LLM security differs from classic ML
 
 In classic models, security focus is mostly on training data, the model, numeric or image input, and `Artifact`. But in `LLM` and `RAG` systems, a large share of risk shifts to runtime. The model interacts with the user, documents, tools, memory, and organizational policies—and each can be an attack surface.
@@ -223,5 +221,3 @@ In `LLM` systems, security is not solved by hardening the prompt alone. A secure
 - Deploying `RAG` without data source validation is very high risk.
 - The minimum practical set includes `Gateway` with runtime logging.
 - `Guardrails` never replace threat modeling.
-
-</div>
