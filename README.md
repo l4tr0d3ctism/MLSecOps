@@ -1,6 +1,6 @@
 # MLSecOps Guide v0.1
 
-> **An open-source operational guide for securing AI systems across the complete ML lifecycle.**
+> **Draft v0.1 — open-source framework guide for securing AI systems across the ML lifecycle.** Not an official industry standard. Reference implementations (CI/CD examples, Evidence Pack automation) are on the [roadmap](#roadmap).
 
 **Documentation:** [l4tr0d3ctism.github.io/MLSecOps](https://l4tr0d3ctism.github.io/MLSecOps/) · **Repository:** [github.com/l4tr0d3ctism/MLSecOps](https://github.com/l4tr0d3ctism/MLSecOps)
 
@@ -22,7 +22,7 @@ AI systems introduce security risks beyond traditional software:
 
 `MLSecOps` extends `DevSecOps` principles to these AI-native attack surfaces—from data ingest through training, deployment, runtime monitoring, and SOC integration.
 
-> **What this is:** An operational security guide—not a blog post or checklist. It maps threats and controls to OWASP, MITRE ATLAS, NIST AI RMF, and ISO/IEC 42001, with a 10-stage security pipeline and auditable `Evidence Pack`.
+> **What this is:** A framework-oriented security guide—not a blog post, checklist, or certified standard. It maps threats and controls to OWASP, MITRE ATLAS, NIST AI RMF, and ISO/IEC 42001, with a 10-stage security pipeline model and an auditable `Evidence Pack` concept.
 >
 > **Who it is for:** Security engineers, ML engineers, MLOps teams, platform owners, and governance teams building or operating production AI systems.
 
@@ -147,7 +147,7 @@ Full table of contents with section links: **[chapters-en/TABLE-OF-CONTENTS.md](
 
 ## Project Status
 
-**Version:** v0.1 (draft)
+**Version:** v0.1 (draft — last reviewed June 2026)
 
 This project is a research-driven **operational guide**—not an official industry standard. Content is based on published frameworks and knowledge through the end of 2025. Given the pace of change in LLM and Agentic AI, readers should periodically review new versions of OWASP LLM Top 10, MITRE ATLAS, and related standards.
 
@@ -161,7 +161,7 @@ If you reference this guide in research, a resume, or internal documentation:
 
 ```text
 Haghighian, M. MLSecOps Guide (v0.1): Securing AI Systems Across the Lifecycle.
-GitHub, 2025.
+GitHub, 2025–2026.
 ```
 
 A Zenodo DOI will be added in a future release (see [Roadmap](#roadmap)).

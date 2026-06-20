@@ -131,7 +131,7 @@ Basic CT cycle controls include validation of new data origin and quality, resca
 
 This guide's 10-stage security pipeline extends the OpenSSF Secure MLOps lifecycle (9 primary stages in the 2025 whitepaper) by splitting artifact loading, scanning, and signing into explicit security stages with enforceable gates.
 
-| Standard `MLOps` stage | Equivalent step in this article's pipeline |
+| Standard `MLOps` stage | Equivalent step in this guide's pipeline |
 |---|---|
 | `Planning and Design` | Threat modeling and scope definition |
 | `Data Engineering` | Artifact loading and data approval gate |

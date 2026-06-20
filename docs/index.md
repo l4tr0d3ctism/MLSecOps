@@ -1,6 +1,6 @@
 # MLSecOps Guide v0.1
 
-> **An open-source operational guide for securing AI systems across the complete ML lifecycle.**
+> **Draft v0.1 — open-source framework guide for securing AI systems across the ML lifecycle.** Not an official industry standard.
 
 [Full TOC](chapters-en/TABLE-OF-CONTENTS.md) · [Quick Start](#quick-start) · [GitHub](https://github.com/l4tr0d3ctism/MLSecOps) · [Contribute](contributing.md) · [License](https://github.com/l4tr0d3ctism/MLSecOps/blob/main/LICENSE)
 
@@ -20,7 +20,7 @@ AI systems introduce security risks beyond traditional software:
 
 `MLSecOps` extends `DevSecOps` principles to these AI-native attack surfaces—from data ingest through training, deployment, runtime monitoring, and SOC integration.
 
-> **What this is:** An operational security guide—not a blog post or checklist. It maps threats and controls to OWASP, MITRE ATLAS, NIST AI RMF, and ISO/IEC 42001, with a 10-stage security pipeline and auditable `Evidence Pack`.
+> **What this is:** A framework-oriented security guide—not a blog post, checklist, or certified standard. It maps threats and controls to OWASP, MITRE ATLAS, NIST AI RMF, and ISO/IEC 42001, with a 10-stage security pipeline model and an auditable `Evidence Pack` concept.
 >
 > **Who it is for:** Security engineers, ML engineers, MLOps teams, platform owners, and governance teams building or operating production AI systems.
 
@@ -128,7 +128,7 @@ Detailed section links: [Full Table of Contents](chapters-en/TABLE-OF-CONTENTS.m
 
 ## Project Status
 
-**Version:** v0.1 (draft)
+**Version:** v0.1 (draft — last reviewed June 2026)
 
 This project is a research-driven **operational guide**—not an official industry standard. Content is based on published frameworks and knowledge through the end of 2025.
 

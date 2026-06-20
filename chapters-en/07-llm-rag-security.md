@@ -8,16 +8,18 @@ In classic models, security focus is mostly on training data, the model, numeric
 
 | Threat (`OWASP LLM 2025`) | Description | Control |
 |---|---|---|
-| `LLM01` Prompt Injection | Bypassing instructions or changing model behavior | Strict `System Prompt`, `Gateway`, red team testing |
+| `LLM01` Prompt Injection | Bypassing instructions or changing model behavior | `AI Gateway`, input/output validation, privilege separation, red team testing (do not rely on system prompt as a security control — see `LLM07`) |
 | `LLM02` Sensitive Information Disclosure | Disclosure of sensitive or confidential data | `DLP`, context control, output restrictions |
+| `LLM03` Supply Chain | Compromised models, plugins, datasets, or dependencies | Model signing, `ModelScan`, `AI-BOM`, provenance (see Chapter 5) |
 | `LLM04` Data and Model Poisoning | Poisoned training data, fine-tuning, or RAG corpus | Data validation, ingest controls, re-index playbook |
 | `LLM05` Improper Output Handling | Unsafe use of model output by another system | Output validation and sandbox |
 | `LLM06` Excessive Agency | Agent or tool actions beyond intended scope | Tool allowlist, `Intent Gate`, human approval |
+| `LLM07` System Prompt Leakage | Extraction of system instructions or internal policy | Output gate, no secrets in prompt, error sanitization |
 | `LLM08` Vector and Embedding Weaknesses | Poisoned or leaked retrieval/embedding data | ACL at retrieval, tenant isolation, ingest scan |
 | `LLM09` Misinformation | Harmful or unreliable generated content | Human review, grounding, output policy |
 | `LLM10` Unbounded Consumption | High token consumption or expensive requests | Rate limit, quota, and cost monitoring |
 
-> Note: `Overreliance` appeared in OWASP LLM Top 10 (2023) but was removed in the 2025 edition; related risks are partly covered by `LLM09` Misinformation and operational human-review controls.
+> Note: `Overreliance` appeared in OWASP LLM Top 10 (2023) but was removed in the 2025 edition; related risks are partly covered by `LLM09` Misinformation and operational human-review controls. `Overrefusal` is not an OWASP Top 10 category; it is discussed below as a security-adjacent operational risk with separate research literature.
 
 ## Security controls for LLM
 
@@ -127,7 +129,7 @@ In `vLLM` or shared GPU scenarios, model weights may be shared, but context and 
 | `Model Collapse` | repetitive output, quality degradation and failure of safety policies | synthetic data ceiling, output diversity evaluation, run gate 7 after every fine-tuning |
 | `Overrefusal` | users are pushed toward bypass techniques | measure false positive block rate, secure usability testing and policy threshold tuning |
 
-Research sources related to `Model Collapse` such as Shumailov et al. and `OWASP LLM` guidance on `Overrefusal` show that these are not merely response quality issues; both can directly affect security and the ability to bypass controls.
+Research on `Model Collapse` (Shumailov et al., 2023) and on `Overrefusal` in LLM safety systems (e.g., Röttger et al., 2024, *Safety-Tuned LLMs Are Not Safer*) show that these are not merely response quality issues; both can directly affect security and the ability to bypass controls.
 
 ## System Prompt Leakage (LLM07)
 

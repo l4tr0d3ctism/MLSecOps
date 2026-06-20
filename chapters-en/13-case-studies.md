@@ -4,11 +4,13 @@
 
 Case studies show that `MLSecOps` risks are not theoretical. Many incidents arise from the combination of data, model, supply chain, access, and runtime.
 
-> Note on sources: Dates and `CVE` identifiers mentioned in this chapter are based on publicly published reports (including Trail of Bits, HiddenLayer, ReversingLabs, and OWASP). For formal citation, the full mapping of claims to sources appears in the "Claims & Evidence" appendix in Chapter 15; it is recommended to add a direct link to the report for each case before publication.
+> **Sources:** Primary references for each case appear inline below and in the [Claims & Evidence](15-conclusion-appendix.md#appendix-claims--evidence) appendix (Chapter 15).
 
 ## LeftoverLocals (CVE-2023-4969)
 
 `Trail of Bits` reported the `LeftoverLocals` vulnerability in January 2024: leftover LLM response data in GPU memory was readable across processes, leading to cross-application data leakage (Apple, Qualcomm, AMD, and Imagination GPUs).
+
+**Reference:** [Trail of Bits — LeftoverLocals (2024)](https://blog.trailofbits.com/2024/01/16/leftoverlocals-local-llm-data-leakage/); [CVE-2023-4969](https://nvd.nist.gov/vuln/detail/CVE-2023-4969)
 
 Lessons learned:
 
@@ -30,6 +32,8 @@ Lessons learned:
 
 `HiddenLayer` research on the `ClearML` platform showed that an attacker who compromises an agent or manipulates metadata can poison the entire training pipeline (an attack known as `Confused Learning`).
 
+**Reference:** [HiddenLayer — NOT SO CLEAR: How MLOps Solutions Can Muddy the Waters of Your Supply Chain](https://hiddenlayer.com/research/not-so-clear/)
+
 Lessons learned:
 
 - Harden MLOps agents
@@ -39,6 +43,8 @@ Lessons learned:
 ## SILENT SABOTAGE (HuggingFace Conversion Bot)
 
 In a real supply chain attack, attackers abused a public bot on HuggingFace whose job was converting `pickle` models to `safetensors` to embed malicious code in seemingly safe artifacts.
+
+**Reference:** [HiddenLayer — SILENT SABOTAGE](https://hiddenlayer.com/research/silent-sabotage/)
 
 Lessons learned:
 
@@ -59,6 +65,8 @@ Lessons learned:
 ## HuggingFace: more than 3,300 unsafe models
 
 `ModelScan` and ReversingLabs research (February 2025) identified more than 3,300 unsafe models on HuggingFace—primarily pickle-based RCE.
+
+**Reference:** [ReversingLabs — Unsafe ML models on Hugging Face (2025)](https://www.reversinglabs.com/blog/unsafe-machine-learning-models-on-hugging-face)
 
 Lessons learned:
 
@@ -90,6 +98,8 @@ Lessons learned:
 
 In the `PoisonGPT` demonstration (Mithril Security, 2023), researchers intentionally uploaded a poisoned GPT-2 model to Hugging Face to show that a public registry can deliver a backdoored model that generates attacker-controlled output while appearing legitimate. The risk is supply-chain trust in public model hubs—not name typosquatting alone.
 
+**Reference:** [Mithril Security — PoisonGPT (2023)](https://blog.mithrilsecurity.io/poisongpt-how-we-hid-a-malicious-model-on-hugging-face/)
+
 Lessons learned:
 
 - Use allowlists for model sources
@@ -109,7 +119,7 @@ Lessons learned:
 
 ## Data leakage from organizational use of public LLMs
 
-In some organizations, employees entered source code, logs, customer data, or internal documents into public LLM tools. This moves data outside the organization's control boundary.
+In some organizations, employees entered source code, logs, customer data, or internal documents into public LLM tools. This moves data outside the organization's control boundary. Widely reported examples include Samsung's 2023 ChatGPT data-leak policy response and similar enterprise incidents.
 
 Lessons learned:
 
@@ -129,7 +139,7 @@ Lessons learned:
 
 ## AI tools inside DevOps
 
-Integrating AI into the development workflow—such as code suggestions or chat on a repository—expands the attack surface to code, secrets, and repository permissions. Examples such as `GitLab Duo` show that the threat model for AI inside IDE/CI must be defined separately.
+Integrating AI into the development workflow—such as code suggestions or chat on a repository—expands the attack surface to code, secrets, and repository permissions. AI-assisted IDE and CI integrations require a separate threat model from production LLM APIs.
 
 Lessons learned:
 

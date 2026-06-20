@@ -4,7 +4,7 @@
 
 `MLSecOps` is a response to the reality that AI systems are not merely classic software. They work with data, models, `Artifact`s, prompts, `RAG`, memory, tools, agents, and probabilistic behavior. Therefore, their security must be distributed across the entire lifecycle.
 
-In this article, security began at the data layer, extended to the model and supply chain, was controlled in the pipeline with enforceable gates, continued at `Runtime` with guardrails and telemetry, and ultimately became auditable through the `Evidence Pack` and governance.
+In this guide, security began at the data layer, extended to the model and supply chain, was controlled in the pipeline with enforceable gates, continued at `Runtime` with guardrails and telemetry, and ultimately became auditable through the `Evidence Pack` and governance.
 
 ## Key Principles
 
@@ -16,7 +16,7 @@ In this article, security began at the data layer, extended to the model and sup
 | Runtime is critical | Many LLM and Agent attacks occur at runtime. |
 | Evidence must be automated | Manual audit after an incident is not reliable. |
 
-> This guide was developed based on frameworks and published knowledge through the end of 2025. Given the pace of change in LLM and Agentic AI, readers should periodically review new versions of `OWASP LLM Top 10`, `MITRE ATLAS`, and CycloneDX standards.
+> **Last reviewed:** June 2026. This guide was developed based on frameworks and published knowledge through the end of 2025. Given the pace of change in LLM and Agentic AI, readers should periodically review new versions of `OWASP LLM Top 10`, `MITRE ATLAS`, and CycloneDX standards.
 
 ## Compact Checklist
 
@@ -103,7 +103,7 @@ This checklist completes the minimum baseline and `Day-2` operations. If time is
 
 ## Short Glossary
 
-Frequently used terms in this article:
+Frequently used terms in this guide:
 
 | Term | Meaning |
 |---|---|
@@ -181,27 +181,25 @@ More detailed `MITRE ATLAS` mapping for SOC analysis in Chapter 10 and control-o
 
 ## References
 
-> Note: This section is provided as a working reference list. For official publication, each reference should be converted to a standard bibliography format (e.g., `IEEE` or `APA`) with author, year, publisher, and `DOI`/`URL` where available.
-
 ### Frameworks and Standards
 
-- OpenSSF (2025). *Visualizing Secure MLOps (MLSecOps) Whitepaper*. OpenSSF AI/ML Security Working Group.
-- NIST (2023). *AI Risk Management Framework (AI RMF 1.0)*.
+- OpenSSF (2025). *Visualizing Secure MLOps (MLSecOps) Whitepaper*. https://openssf.org/blog/2025/01/22/visualizing-secure-mlops/
+- NIST (2023). *AI Risk Management Framework (AI RMF 1.0)*. https://www.nist.gov/itl/ai-risk-management-framework
 - NIST (2024). *Generative AI Profile (NIST-AI-600-1)*.
 - ISO/IEC 42001:2023. *Artificial Intelligence — Management System*.
 - ISO/IEC 23894:2023. *Artificial Intelligence — Guidance on Risk Management*.
-- European Union (2024). *EU AI Act*.
+- European Union (2024). *EU AI Act*. https://artificialintelligenceact.eu/
 - Cloud Security Alliance (2025). *MAESTRO — Multi-Agent Environment Security Framework*.
 
 ### Threat Taxonomy and Security Guides
 
-- OWASP (2025). *Top 10 for LLM Applications (2025)*.
+- OWASP (2025). *Top 10 for LLM Applications (2025)*. https://owasp.org/www-project-top-10-for-large-language-model-applications/
 - OWASP. *Top 10 for Agentic Applications* / *Agentic Security Initiative*.
 - OWASP. *Machine Learning Security Top 10* (`draft` status).
 - OWASP. *LLM Verification Standard (LLMSVS)*.
-- MITRE. *ATLAS — Adversarial Threat Landscape for AI Systems*. atlas.mitre.org
-- *AI Vulnerability Database (AVID)*. avidml.org
-- *AI Incident Database*. incidentdatabase.ai
+- MITRE. *ATLAS — Adversarial Threat Landscape for AI Systems*. https://atlas.mitre.org/
+- *AI Vulnerability Database (AVID)*. https://avidml.org/
+- *AI Incident Database*. https://incidentdatabase.ai/
 
 ### Open-Source Tools and Projects
 
@@ -228,9 +226,11 @@ More detailed `MITRE ATLAS` mapping for SOC analysis in Chapter 10 and control-o
 - Zou, W. et al. (2024). *PoisonedRAG: Knowledge Poisoning Attacks to RAG*.
 - Goodfellow, I. et al. (2015). *Explaining and Harnessing Adversarial Examples* (FGSM).
 - Carlini, N. & Wagner, D. (2017). *Towards Evaluating the Robustness of Neural Networks*.
-- Trail of Bits (2024). *LeftoverLocals (CVE-2023-4969)*.
-- HiddenLayer. *SILENT SABOTAGE* — abuse of Pickle-to-SafeTensors conversion bot.
-- HiddenLayer. *NOT SO CLEAR: How MLOps Solutions Can Muddy the Waters of Your Supply Chain* (ClearML).
+- Trail of Bits (2024). *LeftoverLocals (CVE-2023-4969)*. https://blog.trailofbits.com/2024/01/16/leftoverlocals-local-llm-data-leakage/
+- HiddenLayer. *SILENT SABOTAGE* — abuse of Pickle-to-SafeTensors conversion bot. https://hiddenlayer.com/research/silent-sabotage/
+- HiddenLayer. *NOT SO CLEAR: How MLOps Solutions Can Muddy the Waters of Your Supply Chain* (ClearML). https://hiddenlayer.com/research/not-so-clear/
+- Mithril Security (2023). *PoisonGPT*. https://blog.mithrilsecurity.io/poisongpt-how-we-hid-a-malicious-model-on-hugging-face/
+- Röttger, P. et al. (2024). *Safety-Tuned LLMs Are Not Safer* (Overrefusal and safety trade-offs).
 - Sigstore Blog (2025). *Practical Model Signing with Sigstore — model-transparency v1.0*.
 - Cohen, S. et al. (2024). *Here Comes the AI Worm (Morris II): Zero-click Worms Targeting GenAI-Powered Applications*.
 - Spracklen, J. et al. (2024). *We Have a Package for You: Package Hallucinations by Code-Generating LLMs (Slopsquatting)*.
@@ -244,7 +244,7 @@ More detailed `MITRE ATLAS` mapping for SOC analysis in Chapter 10 and control-o
 
 ## Appendix: Claims & Evidence
 
-This appendix maps key claims in the article to verifiable references:
+This appendix maps key claims in the guide to verifiable references:
 
 | Topic / Claim | Suggested Reference |
 |---|---|
@@ -252,19 +252,19 @@ This appendix maps key claims in the article to verifiable references:
 | `Indirect / Tool-mediated Injection` | Greshake et al., *Not what you've signed up for* (2023) |
 | `RAG / Retrieval Poisoning` | Zou et al., *PoisonedRAG* (2024); `OWASP LLM08` |
 | `Adversarial Evasion` | Goodfellow et al. (2015); Carlini & Wagner (2017); `MITRE ATLAS AML.T0015` |
-| `Overrefusal` | `OWASP LLM Top 10 (2025)` |
+| `Overrefusal` | Röttger et al., *Safety-Tuned LLMs Are Not Safer* (2024); operational threshold tuning (not an OWASP Top 10 category) |
 | `Agentic Threats` / `Tool Misuse` | `OWASP Top 10 for Agentic Applications`; CSA `MAESTRO` |
 | `System Prompt Leakage` / `LLM07` | `OWASP Top 10 for LLM Applications (2025)` |
 | `Vector & Embedding Weaknesses` / `LLM08` | `OWASP Top 10 for LLM Applications (2025)` |
-| `LeftoverLocals` (GPU memory leakage) | Trail of Bits, `CVE-2023-4969` (2024) |
-| Unsafe HuggingFace models (Pickle RCE) | ReversingLabs / Protect AI `ModelScan` (2025) |
+| `LeftoverLocals` (GPU memory leakage) | Trail of Bits, `CVE-2023-4969` (2024); https://blog.trailofbits.com/2024/01/16/leftoverlocals-local-llm-data-leakage/ |
+| Unsafe HuggingFace models (Pickle RCE) | ReversingLabs / Protect AI `ModelScan` (2025); https://www.reversinglabs.com/blog/unsafe-machine-learning-models-on-hugging-face |
 | `AI Worm / Zero-click` | Cohen et al., *Here Comes the AI Worm (Morris II)* (2024) |
 | `Models-as-Malware` | ZJU-SEC, *TensorAbuse* |
 | `Package Hallucination` | Spracklen et al., *We Have a Package for You* (2024) |
 | `Embedding Inversion` | Morris et al., *Text Embeddings Reveal (Almost) As Much As Text* (2023) |
 | `Advanced Backdoors (RLHF/CoT/Edit)` | Rando & Tramèr (2024), Xiang et al. (2024), Li et al. (2024) |
-| `SILENT SABOTAGE / ClearML` | HiddenLayer Research |
-| `PoisonGPT` supply-chain demo | Mithril Security, *PoisonGPT* (2023) |
+| `SILENT SABOTAGE / ClearML` | HiddenLayer Research; https://hiddenlayer.com/research/silent-sabotage/ ; https://hiddenlayer.com/research/not-so-clear/ |
+| `PoisonGPT` supply-chain demo | Mithril Security, *PoisonGPT* (2023); https://blog.mithrilsecurity.io/poisongpt-how-we-hid-a-malicious-model-on-hugging-face/ |
 | Agent API key exposure pattern | Design anti-pattern (illustrative); see Chapter 13 |
 | 22 MLOps security controls | OpenSSF *MLSecOps Whitepaper* (2025) |
 
@@ -276,7 +276,7 @@ The figure list includes the `DevSecOps/MLSecOps` view, pipeline, `CT` cycle, `T
 
 ## GitHub Version
 
-This version is written in Markdown and ready for display on GitHub. Each chapter is wrapped in a `div` with left-to-right direction, and technical terms are written with `inline code`.
+This guide is maintained as Markdown in the [MLSecOps repository](https://github.com/l4tr0d3ctism/MLSecOps). Technical terms use `inline code` formatting where helpful for scanability.
 
 ## Final Conclusion
 

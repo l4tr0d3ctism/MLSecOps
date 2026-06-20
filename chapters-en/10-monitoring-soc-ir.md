@@ -68,7 +68,7 @@ Sample detectable cases:
 - `Agent Misbehavior`
 - `Excessive Tool Invocation`
 - `Suspicious Retrieval Activity`
-- privilege escalation or `Privilege Escalation` by agents
+- agent privilege escalation
 
 ## Threat analysis with MITRE ATLAS
 

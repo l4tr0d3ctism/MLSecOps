@@ -72,7 +72,7 @@ The AI supply chain is not limited to software packages. This chain also include
 
 ## MLOps infrastructure vulnerabilities
 
-`MLOps` platforms—such as `MLflow`, `ClearML`, `Kubeflow`, model registries, and notebook servers—are attack surfaces themselves. Security research (including HiddenLayer and Hackstery) has shown:
+`MLOps` platforms—such as `MLflow`, `ClearML`, `Kubeflow`, model registries, and notebook servers—are attack surfaces themselves. Security research (including HiddenLayer, JFrog *MLOops*, Contrast Security MLflow advisories, and Trail of Bits) has shown:
 
 | Platform / vector | Risk | Control |
 |---|---|---|

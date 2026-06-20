@@ -19,9 +19,9 @@ The scope of the article can be explained more clearly through several specific 
 | `Edge / IoT / TinyML` | Resource constraints, physical device security, secure model updates (`OTA`), and on-device model protection |
 | Cyber-physical systems (`CPS/ICS`) | Safety impact, adversarial attacks on sensors, and decision integrity in industrial control |
 
-For `Edge`, `IoT`, and `CPS` systems, in addition to the controls in this article, physical risks, safety, and resource constraints must be assessed separately using specialized frameworks. This guide primarily focuses on cloud-native and enterprise architectures.
+For `Edge`, `IoT`, and `CPS` systems, in addition to the controls in this guide, physical risks, safety, and resource constraints must be assessed separately using specialized frameworks. This guide primarily focuses on cloud-native and enterprise architectures.
 
-Not every topic in this article is equally mandatory for every team. For example, numerical `Adversarial Robustness` tests are highly important for `Tabular` or `Vision` models, but for a `Pure LLM API` without proprietary data, some of that work has more limited applicability.
+Not every topic in this guide is equally mandatory for every team. For example, numerical `Adversarial Robustness` tests are highly important for `Tabular` or `Vision` models, but for a `Pure LLM API` without proprietary data, some of that work has more limited applicability.
 
 ## Primary audiences
 
@@ -55,7 +55,7 @@ Threat modeling is a more technical layer. At this stage, it is determined how a
 
 At this layer, resources such as `OWASP ML Top 10`, `OWASP LLM Top 10`, `MITRE ATLAS`, and methods such as `STRIDE` are typically used so threats can be described in a shared technical and operational language.
 
-> Version note: `OWASP LLM Top 10` version 2025 has been published and finalized, but `OWASP Machine Learning Security Top 10` remains in draft status (approximately version `v0.3`). Therefore, identifiers `ML01`–`ML10` in this article are used as working references and may change in the final version.
+> Version note: `OWASP LLM Top 10` version 2025 has been published and finalized, but `OWASP Machine Learning Security Top 10` remains in draft status (approximately version `v0.3`). Therefore, identifiers `ML01`–`ML10` in this guide are used as working references and may change in the final OWASP release.
 
 ## Attack surface matrix
 

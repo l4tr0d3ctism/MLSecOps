@@ -16,13 +16,19 @@ Governance means that decisions related to the model, data, risk, and release ar
 
 The organization's Evidence Pack must show which of these 22 controls—aligned with the threat model—have been implemented.
 
-## AI Design Assurance Level (AI-DAL)
+## AI Design Assurance Level (AI-DAL) — illustrative only
 
-For high-risk systems (medical, financial, critical infrastructure), the `AI-DAL` concept (author-adapted from `DAL` ideas in safety-critical software engineering; not an published industry standard) sets the design assurance level according to adverse impact. Each AI-DAL level has a set of design, testing, and compliance artifact requirements. This approach complements `ISO/IEC 42001` and the `EU AI Act` for high-risk AI systems.
+> **Non-standard concept:** `AI-DAL` is an author-adapted planning aid inspired by design assurance levels in safety-critical software engineering. It is **not** a published industry standard. For formal compliance, use `ISO/IEC 42001` and the `EU AI Act`; treat the table below as an optional severity ladder only.
 
-## FMEA-AI and STRIDE-AI
+| Level | Example context | Minimum evidence expectations |
+|---|---|---|
+| `AI-DAL 1` | Internal low-impact assistants | Basic threat model, artifact scan at load, runtime logging |
+| `AI-DAL 2` | Customer-facing LLM/RAG services | Full pipeline gates, red team suite, signed `Evidence Pack` |
+| `AI-DAL 3` | High-risk domains (medical, finance, critical infrastructure) | Independent security review, continuous monitoring, formal risk register, human oversight |
 
-For structured threat modeling:
+## STRIDE and FMEA applied to ML assets
+
+The methods below apply established threat-modeling techniques to ML/AI assets. They are **not** separate published standards:
 
 | Method | Application |
 |---|---|
@@ -80,7 +86,7 @@ An `Evidence Pack` is a bundle of technical and managerial evidence showing how 
 
 ### Practical mapping of EU AI Act requirements (High-Risk systems) to controls
 
-| EU AI Act requirement | Equivalent control in this article |
+| EU AI Act requirement | Related control in this guide |
 |---|---|
 | `Risk Management System` (Art. 9) | Risk management + versioned threat model (Chapter 2) |
 | `Data Governance` (Art. 10) | Data control, lineage, PII masking (Chapter 4) |
@@ -91,7 +97,7 @@ An `Evidence Pack` is a bundle of technical and managerial evidence showing how 
 | `Accuracy, Robustness, Cybersecurity` (Art. 15) | Adversarial testing, signing, runtime guardrail (Chapters 5, 6, 7) |
 | `Post-Market Monitoring` (Art. 72) | Runtime monitoring and SOC (Chapter 10) |
 
-This mapping shows that MLSecOps technical controls can directly produce compliance evidence for the `EU AI Act`—provided that evidence is maintained automatically and in an auditable manner.
+This mapping shows how MLSecOps technical controls **may support** documentation and audit activities relevant to the `EU AI Act`—provided that evidence is maintained automatically, reviewed by legal/compliance teams, and adapted to each deployment context.
 
 ### Mapping EU AI Act requirements to Evidence Pack components
 
@@ -178,6 +184,8 @@ flowchart LR
 | CT / retrain | Full suite regression | MLOps |
 
 ## Assurance metrics
+
+> Example thresholds only — each organization must set acceptance criteria in its threat model and policy.
 
 | Control | Metric | Example acceptance | Frequency |
 |---|---|---|---|
